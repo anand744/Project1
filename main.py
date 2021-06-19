@@ -33,11 +33,11 @@ def index():
 	return render_template('home.html')
 
 # MODEL_PATH = 'F:\Major Project Main Folder\MAJOR-WEBSITE-SEHAT SAARTHI\Project\model\DenseNet169-best-model.h5'
-MODEL_PATH = '.model\DenseNet169-best-model.h5'
+# MODEL_PATH = '.model\DenseNet169-best-model.h5'
 
 
 # Load your trained model
-model = load_model(MODEL_PATH)
+model = load_model("DenseNet169-best-model.h5")
 model.make_predict_function() 
 
 print('Model loaded. Check http://127.0.0.1:5000/')
